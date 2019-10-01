@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/bgberanda.jpg) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#logoku {
+  width: 150px;
+  margin-left: 80px;
+  margin-top: 0px;
+  margin-bottom: 10px;"
+}
+
+.topnav {
+  background-color: #6e7075;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-right: 5%;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
