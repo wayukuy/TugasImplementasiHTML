@@ -2,4 +2,4 @@
 Perancangan Website B | Kelompok 3.
 
 Progress CSS :
-![error](img/ssprogress.png)
+![error](img/ssprogress.PNG)
