@@ -34,10 +34,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(../img/bgberanda.jpg) no-repeat center top;
+  background: url(../img/bgberanda.jpg) center top;
   background-size: cover;
   font-family: sans-serif;
   height: 100vh;
+  width: 100%;
 }
 
 #logoku {
