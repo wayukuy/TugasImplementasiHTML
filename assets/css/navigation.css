@@ -1,0 +1,75 @@
+#beranda {
+  background: url("../img/bgberanda.jpg");
+  background-size: cover;
+}
+
+.navigation {
+  width: 100%;
+  background: #fff;
+  min-width: 600px;
+  max-width: 100%;
+}
+
+.navigation__inner {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.navigation__logo {
+  position: relative;
+  height: 100%;
+  flex-grow: 1
+}
+
+.site__logo {
+  height: 100%;
+}
+
+.navigation__menu {
+  margin-left: 15px;
+}
+
+.navigation__mobile {
+  display: none;
+  cursor: pointer;
+}
+
+.navigation__menu:first-child {
+  margin-left: 0;
+}
+
+.mobile__bar {
+  height: 2px;
+  width: 20px;
+  background: black;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.mobile__bar:first-child {
+  margin-top: 0px;
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    min-width: none;
+    max-width: none;
+  }
+
+  .navigation__main {
+    display: none !important;
+  }
+
+  .navigation__logo {
+    display: inline-flex;
+    justify-content: center !important;
+  }
+
+  .navigation__mobile {
+    display: block;
+  }
+}
+

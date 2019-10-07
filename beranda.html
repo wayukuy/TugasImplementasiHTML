@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Perancangan Web | Kelompok 3</title>
-    <link rel="stylesheet" href="css/beranda.css">
-  </head>
-<body>
-		<div class="topnav">
-		  <img class="bar" id="logoku" src="img/logoku.png">
-		  <a class="bar" href="index.html">Daftar</a>
-		  <a class="bar" href="index.html">Masuk</a>
-		  <a class="bar" href="#produk">Produk</a>
-		  <a class="bar" href="#beranda" id="active">Beranda</a>		  
-		</div>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+	<!--
+		1. cara paling mudah untuk membuat navigasi yang responsive adalah dengan flexbox.
+		2. cara paling umum untuk membuat image responsive terhadap height parent container adalah
+			 dengan men-set height parent container dan membuat positionnya relative. lalu buat height imagenya 100%
+		3. cara paling umum lainnya untuk membuat semua property center secara vertical adalah dengan flexbox. 
+			 display flex pada parentnya, lalu gunakan property align-items center pada parentnya.
+		4. inline css style itu sangatlah buruk, jadi hindari inline css styling. Apalagi ketika kita bekerja dalam sebuah team
+		5. pada umumnya, mobile navigation menu akan menghilang dan dibungkus dengan hamburger menu
+		6. cara paling mudah membuat website responsive adalah dengan menggunakan min-width
+		7. gunakan javascript/jquery untuk memunculkan mobil menu ketika user klik hamburger menu
+	-->
+
+	<body id="beranda">
+		<nav class="navigation">
+			<div class="navigation__inner">
+				<div class="navigation__mobile">
+					<div class="mobile__bar bar__one"></div>
+					<div class="mobile__bar bar__two"></div>
+					<div class="mobile__bar bar__three"></div>
+				</div>
+				<div class="navigation__logo">
+					<img class="bar site__logo" id="logoku" src="./assets/img/logoku.png">
+				</div>
+				<div class="navigation__main">
+					<a class="bar navigation__menu" href="index.html">Daftar</a>
+					<a class="bar navigation__menu" href="index.html">Masuk</a>
+					<a class="bar navigation__menu" href="#produk">Produk</a>
+					<a class="bar navigation__menu" href="#beranda" id="active">Beranda</a>	
+				</div>
+				
+			</div>
+				  
+		</nav>
 
 		<div style="text-align: center;">
-		  <img src="img/produk.jpeg" style="width: 50%; padding: 1%;">
+			<img src="./assets/img/produk.jpeg" style="width: 50%; padding: 1%;">
 		</div>
 
-<!-- 		<div style="overflow:auto">
-		  <div class="menu">
-		    <img src="img/produk2.jpg">
-		  </div>
-
-		  <div class="main">
-		    <img src="img/produk2.jpg">
-		  </div>
-
-		  <div class="right">
-		    <img src="img/produk2.jpg">
-		  </div>
+	<!-- 		<div style="overflow:auto">
+			<div class="menu">
+				<img src="img/produk2.jpg">
+			</div>
+			<div class="main">
+				<img src="img/produk2.jpg">
+			</div>
+			<div class="right">
+				<img src="img/produk2.jpg">
+			</div>
 		</div> -->
 
 		<!-- Konten Gambar Highlight -->
@@ -55,32 +81,30 @@
 
 
 			<!-- Kumpulan Produk -->
-<!-- 			<h1>&nbsp;&nbsp;
+	<!-- 			<h1>&nbsp;&nbsp;
 				<font face="Arial">Produk</font>
 			</h1>
 			<table align="center" >
-		  <tr>
-		      <td>		      	
-		        <img src="img/produk2.jpg" 
-		               height="250" width="250" 
-		               alt="produk"  
-		        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		      </td>
-		      <td>
-		        <img src="img/produk.jpeg" 
-		               height="250" width="250" 
-		               alt="produk"  
-		        />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		      </td>
-		      <td>
-		        <img src="img/produk2.jpg" 
-		               height="250" width="250" 
-		               alt="produk"  
-		        />
-		      </td>
-		  </tr>
-		    </table> -->
-
-</div>
-</body>
+			<tr>
+					<td>		      	
+						<img src="img/produk2.jpg" 
+										height="250" width="250" 
+										alt="produk"  
+						/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+					<td>
+						<img src="img/produk.jpeg" 
+										height="250" width="250" 
+										alt="produk"  
+						/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+					<td>
+						<img src="img/produk2.jpg" 
+										height="250" width="250" 
+										alt="produk"  
+						/>
+					</td>
+			</tr>
+				</table> -->
+	</body>
 </html>
