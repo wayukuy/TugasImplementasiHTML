@@ -1,0 +1,35 @@
+#beranda {
+  background: url("../img/bgberanda.jpg");
+  background-size: cover;
+}
+
+.navigation {
+  width: 100%;
+  background: #fff;
+}
+
+.navigation__inner {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.navigation__logo {
+  position: relative;
+  height: 100%;
+  flex-grow: 1
+}
+
+.site__logo {
+  height: 100%;
+}
+
+.navigation__menu {
+  margin-left: 15px;
+}
+
+.navigation__menu:first-child {
+  margin-left: 0;
+}
