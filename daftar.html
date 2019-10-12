@@ -9,26 +9,63 @@
 
     <div class="daftar-box">
       <h1 style="text-align: center;">Daftar Akun</h1>
-      <form action="login.html">
+      <form name="formdaftar" action="login.html" onsubmit="return formvalidasi()" method="post">
           <label>Nama Lengkap</label>
-          <input type="text" name="nama" placeholder="Masukkan nama lengkap" required />
+          <input type="text" name="nama" placeholder="Masukkan nama lengkap" />
 
           <label>Nomor Identitas</label>
-          <input type="text" name="id" placeholder="Masukkan nomor identitas KTP/SIM" required />
+          <input type="text" name="ktp" placeholder="Masukkan nomor identitas KTP/SIM" />
 
           <label>Alamat</label>
-          <input type="text" name="alamat" placeholder="Masukkan alamat" required />
+          <input type="text" name="alamat" placeholder="Masukkan alamat" />
 
           <label>No. Hp</label>
-          <input type="text" name="nohp" placeholder="Masukkan no hp" required />
+          <input type="text" name="nohp" placeholder="Masukkan no hp" />
 
           <label>Username</label>
-          <input type="text" name="username" placeholder="Masukkan username baru" required />
+          <input type="text" name="username" placeholder="Masukkan username baru" />
 
           <label>Password</label>
-          <input type="password" name="pass" placeholder="Masukkan password baru" required />
+          <input type="password" name="password" placeholder="Masukkan password baru" />
           <input type="submit" value="Daftar">
       </form>
     </div>
   </body>
+      <script type = "text/javascript">
+      // Form validasi jika inputan kosong
+      function formvalidasi() {
+      
+         if( document.formdaftar.nama.value == "" ) {
+            alert( "Nama Tidak Boleh Kosong!" );
+            document.formdaftar.nama.focus() ;
+            return false;
+         }
+         if( document.formdaftar.ktp.value == "" ) {
+            alert( "Nomor Identitas Tidak Boleh Kosong!" );
+            document.formdaftar.password.focus() ;
+            return false;
+         }
+         if( document.formdaftar.alamat.value == "" ) {
+            alert( "Alamat Tidak Boleh Kosong!" );
+            document.formdaftar.password.focus() ;
+            return false;
+         }
+         if( document.formdaftar.nohp.value == "" ) {
+            alert( "No. HP Tidak Boleh Kosong!" );
+            document.formdaftar.password.focus() ;
+            return false;
+         }
+         if( document.formdaftar.username.value == "" ) {
+            alert( "Username Baru Tidak Boleh Kosong!" );
+            document.formdaftar.username.focus() ;
+            return false;
+         }
+         if( document.formdaftar.password.value == "" ) {
+            alert( "Password Baru Tidak Boleh Kosong!" );
+            document.formdaftar.password.focus() ;
+            return false;
+         }
+         return alert('Akun Berhasil Dibuat, Silahkan Login!');
+      }
+    </script>
 </html>
