@@ -85,7 +85,32 @@ body {
   display: table;
   clear: both;
   margin-left: 7%;
+}
 
+.card {
+  box-shadow: 0 10px 8px 5px rgba(1, 1, 1, 1);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  font-size: 1.5vw;
+}
 
+.price {
+  color: grey;
+  font-size: 22px;
+  padding-bottom: 10%;
+  font-size: 2vw;
+}
+
+#cardproduk {
+  box-shadow: 0 10px 8px 5px rgba(1, 1, 1, 1);
+  max-width: 12%;  
+  text-align: left;
+  font-family: arial;
+  background-color: #dbdbdb;
+  font-size: 3vw;
+}
 
 
