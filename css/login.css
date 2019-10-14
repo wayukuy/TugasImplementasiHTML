@@ -110,6 +110,11 @@ body {
   color: #fff;
 }
 
+#adminlogin {
+  margin-left: 80%;
+  font-size: 12px;
+}
+
 ::placeholder{
 color: white;
 }
