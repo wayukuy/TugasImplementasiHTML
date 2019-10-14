@@ -1,0 +1,124 @@
+/*@media screen and (min-width: 500px) {
+   .div{
+      width: 200px;
+   }
+   .sidebar {
+      display: none;
+   }
+   .header h1 {
+      font-size: 20pt;
+   }
+}
+
+@media screen and (min-width: 800px) {
+   .div{
+      width: 500px;
+   }
+   .sidebar {
+      display: none;
+   }
+   .header h1 {
+      font-size: 30pt;
+   }
+}*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/bg.jpg) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.login-box {
+  width: 450px;
+  height: 450px;
+  background: grey;
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.login-box .logo {
+  width: 200px;
+  position: absolute;
+  top: 25px;
+  left: calc(50% - 95px);
+  padding-bottom: 0px;
+}
+
+/*.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}*/
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #05c46b;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #2bcbba;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  color: black;
+  margin-left: 33%;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+
+#adminlogin {
+  margin-left: 80%;
+  font-size: 12px;
+}
+
+::placeholder{
+color: white;
+}
+
+#kembali  {
+  margin: 0;
+}

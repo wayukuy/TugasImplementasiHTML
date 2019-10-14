@@ -1,0 +1,116 @@
+/*@media screen and (min-width: 500px) {
+   .div{
+      width: 200px;
+   }
+   .sidebar {
+      display: none;
+   }
+   .header h1 {
+      font-size: 20pt;
+   }
+}
+
+@media screen and (min-width: 800px) {
+   .div{
+      width: 500px;
+   }
+   .sidebar {
+      display: none;
+   }
+   .header h1 {
+      font-size: 30pt;
+   }
+}*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background: url(../img/bg.jpg) center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.produk-box {
+  margin-bottom: 10px;
+  width: 450px;
+  height: 400px;
+  background: grey;
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 0px 30px;
+}
+
+.produk-box .logo {
+  width: 200px;
+  position: absolute;
+  top: 25px;
+  left: calc(50% - 95px);
+}
+
+/*.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}*/
+
+.produk-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.produk-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.produk-box input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+}
+
+.produk-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #05c46b;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.produk-box input[type="file"] {
+  background: #faad55;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  width: 65%;
+  margin-top: 3%;
+}
+
+.produk-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #2bcbba;
+  color: #000;
+}
+
+.produk-box a:hover {
+  color: #fff;
+}
+
+::placeholder{
+color: white;
+}

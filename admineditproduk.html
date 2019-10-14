@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Perancangan Web | Kelompok 3</title>
+    <link rel="stylesheet" href="css/admineditproduk.css">
+  </head>
+  <body>
+
+    <div class="produk-box">
+      <h1 style="text-align: center;">Edit Produk</h1>
+      <form name="formproduk" action="adminproduk.html" onsubmit="return formvalidasi()">
+          <label>Nama Produk</label>
+          <input type="text" name="nama" placeholder="Masukkan nama Produk" />
+
+          <label>Harga Produk</label>
+          <input type="text" name="harga" placeholder="Masukkan harga Produk" />
+
+          <label>Foto Produk</label>
+          <input type="file" name="foto" />
+          <input type="submit" value="Simpan">
+      </form>
+    </div>
+  </body>
+      <script type = "text/javascript">
+      // Form validasi jika inputan kosong
+      function formvalidasi() {
+      
+         if( document.formproduk.nama.value == "" ) {
+            alert( "Nama Produk Tidak Boleh Kosong!" );
+            document.formproduk.nama.focus() ;
+            return false;
+         }
+         if( document.formproduk.harga.value == "" ) {
+            alert( "Harga Tidak Boleh Kosong!" );
+            document.formproduk.harga.focus() ;
+            return false;
+         }
+         if( document.formproduk.foto.value == "" ) {
+            alert( "Foto Belum diUpload!" );
+            document.formproduk.foto.focus() ;
+            return false;
+         }
+         return alert('Produk Berhasil diUbah!');
+      }
+    </script>
+</html>
