@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(../img/bgberanda.jpg) center top;
+  background: url(../img/bgcoba.png) center top;
   background-size: cover;
   font-family: sans-serif;
   height: 100vh;
@@ -26,6 +26,8 @@ body {
 
 .topnav {
   background-color: #6e7075;
+  opacity: 0.8;
+  box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 1);
   overflow: hidden;
   padding-top: 10px;
   padding-left: 20px;
