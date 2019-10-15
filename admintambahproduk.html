@@ -8,17 +8,17 @@
   <body>
 
     <div class="produk-box">
-      <h1 style="text-align: center;">Edit Produk</h1>
+      <h1 style="text-align: center;">Tambah Produk</h1>
       <form name="formproduk" action="adminproduk.html" onsubmit="return formvalidasi()">
           <label>Nama Produk</label>
-          <input type="text" name="nama" placeholder="Serbuk Kelor" />
+          <input type="text" name="nama" placeholder="Masukkan nama Produk" />
 
           <label>Harga Produk</label>
-          <input type="text" name="harga" placeholder="Rp 30.000,00" />
+          <input type="text" name="harga" placeholder="Masukkan harga Produk" />
 
           <label>Foto Produk</label>
           <input type="file" name="foto" />
-          <input type="submit" value="Simpan">
+          <input type="submit" value="Tambah">
       </form>
     </div>
   </body>
@@ -41,7 +41,7 @@
             document.formproduk.foto.focus() ;
             return false;
          }
-         return alert('Produk Berhasil diUbah!');
+         return alert('Produk Berhasil ditambahkan!');
       }
     </script>
 </html>

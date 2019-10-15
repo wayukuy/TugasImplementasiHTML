@@ -90,6 +90,15 @@ body {
   font-size: 3vw;
 }
 
+#tambahproduk {
+  margin-left: 83%;
+  margin-bottom: 0%;
+  font-family: arial;
+  background-color: #4CAF50;
+  font-size: 2vw;
+  text-align: center;
+}
+
 
 #deleteproduk button {
   margin-top: -50%;
