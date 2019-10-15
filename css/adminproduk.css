@@ -54,17 +54,6 @@ body {
   color: white;
 }
 
-.column {
-  float: left;
-  width: 30%;
-  padding: 1%;
-}
-.row {
-  display: table;
-  clear: both;
-  margin-left: 7%;
-}
-
 .card {
   box-shadow: 0 10px 8px 5px rgba(1, 1, 1, 1);
   max-width: 400px;
@@ -88,17 +77,17 @@ body {
   font-family: arial;
   background-color: #dbdbdb;
   font-size: 3vw;
+
 }
 
 #tambahproduk {
-  margin-left: 83%;
+  margin-left: 86%;
   margin-bottom: 0%;
   font-family: arial;
   background-color: #4CAF50;
   font-size: 2vw;
   text-align: center;
 }
-
 
 #deleteproduk button {
   margin-top: -50%;
@@ -115,4 +104,23 @@ body {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+}
+
+.col {
+  font-size: 2vw;
+  float: left;
+  margin: 5px;
+  width: calc( 33.33% - 10px);
+}
+
+@media only screen and (max-width: 600px) {
+  .col {
+    width: calc( 50% - 10px);
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .col {
+    width: 100%;
+  }
 }
