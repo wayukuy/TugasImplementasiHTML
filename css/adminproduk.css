@@ -81,12 +81,14 @@ body {
 }
 
 #tambahproduk {
-  margin-left: 86%;
+  margin-left: 86.5%;
   margin-bottom: 0%;
   font-family: arial;
   background-color: #4CAF50;
   font-size: 2vw;
-  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 #deleteproduk button {

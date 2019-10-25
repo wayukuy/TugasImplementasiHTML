@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Perancangan Web | Kelompok 3</title>
+    <link rel="stylesheet" href="css/userkeranjang.css">
+</head>
+<body>
+		<div class="topnav">
+		  <img class="bar" id="logoku" src="img/logoku.png">
+		  <a class="bar" href="login.html">Keluar</a>
+		  <a class="bar" href="userkeranjang.html" id="active">Keranjang</a>
+		  <a class="bar" href="userproduk.html">Produk</a>
+		  <a class="bar" href="userberanda.html">Beranda</a>		  
+		</div><br>
+
+		<h1 style="padding-left: 5%; color: black;" id="cardproduk">Keranjang</h1>
+
+		<div class="card">
+			<table>
+		  <tr>
+		    <th>Produk</th>
+		    <th>Harga</th>
+		    <th>Jumlah</th>
+		    <th>Total</th>
+		    <th>Edit</th>
+		  </tr>
+		  <tr>
+		    <td><img src="img/produk2.jpg" style="width: 50%;"></td>
+		    <td>Rp 30.000,00</td>
+		    <td><input type="number" style="width: 20%;" placeholder="1"></td>
+		    <td>Rp 30.000,00</td>
+		    <td><button>Hapus</button></td>
+		  </tr>
+		  <tr>
+		    <td><img src="img/produk2.jpg" style="width: 50%;"></td>
+		    <td>Rp 30.000,00</td>
+		    <td><input type="number" style="width: 20%;" placeholder="1"></td>
+		    <td>Rp 30.000,00</td>
+		    <td><button>Hapus</button></td>
+		  </tr>	
+		  <tr>
+		    <th colspan="3">Total Bayar</th>
+		    <th colspan="2">Rp 60.000,00</th>
+		  </tr>	  			 
+		</table>	
+		</div><br>
+		<input id="bayar" type="submit" value="Bayar"><br><br>
+</body>
+</html>
