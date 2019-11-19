@@ -30,7 +30,7 @@
 		    <td>Rp 30.000,00</td>
 		    <td><input type="number" style="width: 20%;" placeholder="1"></td>
 		    <td>Rp 30.000,00</td>
-		    <td><button>Hapus</button></td>
+		    <td><button class="delbutton">Hapus</button></td>
 		  </tr>
 		  <tr>
 		    <td><img src="img/produk2.jpg" style="width: 50%;"></td>
@@ -47,4 +47,28 @@
 		</div><br>
 		<input id="bayar" type="submit" value="Bayar"><br><br>
 </body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<script type="text/javascript" >
+		        $(function() {
+
+		            $(".delbutton").click(function() {
+		                var del_id = $(this).attr("id");
+		                var info = 'id=' + del_id;
+		                if (confirm("Sure you want to delete this post? This cannot be undone later.")) {
+		                    $.ajax({
+		                        type : "POST",
+		                        url : "userkeranjang.html", //URL to the delete php script
+		                        data : info,
+		                        success : function() {
+		                        }
+		                    });
+		                    $(this).parents(".record").animate("fast").animate({
+		                        opacity : "hide"
+		                    }, "slow");
+		                }
+		                return false;
+		            });
+		        });
+		 </script>
 </html>
