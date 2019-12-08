@@ -13,12 +13,42 @@
 		  <a class="bar" href="userproduk.html">Produk</a>
 		  <a class="bar" href="userberanda.html" id="active">Beranda</a>		  
 		</div><br>
+		<div class="slideshow-container">
 
-		<div style="text-align: center;">
+		<div class="mySlides fade">
+
+		  <img src="img/produk.jpeg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+		  <div class="text">Teh Daun Kelor</div>
+		</div>
+		<div class="mySlides fade">
+
+		  <img src="img/pil.jpeg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+		  <div class="text">Suplemen Kelor</div>
+		</div>
+
+		<div class="mySlides fade">
+
+		  <img src="img/mie.jpeg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+		  <div class="text">Mie Kelor</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+<!-- 		<div style="text-align: center;">
 		  <a href=""><img src="img/kiri.png" style="width: 5%; margin-bottom: 15%;"></a>
 		  <a href="userproduk.html"><img src="img/produkcarousel.png" style="width: 50%; padding: 1%;"></a>
 		  <a href=""><img src="img/kanan.png" style="width: 5%; margin-bottom: 15%;"></a>
-		</div>
+		</div> -->
 
 		<h1 style="padding-left: 5%; color: black;" id="cardproduk">Produk</h1>
 
@@ -63,4 +93,40 @@
 		    $(".loader").fadeOut(3000);
 		});
 		</script>
+<script>		
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>		
 </html>
