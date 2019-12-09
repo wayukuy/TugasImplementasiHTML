@@ -17,14 +17,14 @@
 		<h1 style="padding-left: 5%; color: black;" id="cardproduk">Produk</h1>
 
 		<div class="section" style="margin-left: 5%; margin-right: 5%;">
-		  <div class="col card">
+		  <!-- <div class="col card">
 		    <img src="img/produk2.jpg" alt="produk" style="width:100%">
 			<h1>Serbuk Kelor</h1>
 			<p class="price">Rp 30.000,00</p>
 			<p>Serbuk kelor adalah produk olahan yang mempunyai banyak manfaat untuk menjaga kesehatan tubuh.</p>
   			<a href="userkeranjang.html"><button>Masukkan Keranjang</button></a>
-		  </div>
-		  <div class="col card">
+		  </div> -->
+		  <!-- <div class="col card">
 		    <img src="img/produk2.jpg" alt="produk" style="width:100%">
 			<h1>Serbuk Kelor</h1>
 			<p class="price">Rp 30.000,00</p>
@@ -58,8 +58,27 @@
 			<p class="price">Rp 30.000,00</p>
 			<p>Serbuk kelor adalah produk olahan yang mempunyai banyak manfaat untuk menjaga kesehatan tubuh.</p>
   			<a><button>Masukkan Keranjang</button></a>
-		  </div>
+		  </div> -->
 		</div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$.getJSON('https://raw.githubusercontent.com/wayukuy/wayukuy.github.io/master/json/produk.json',
+            function (data) {
+            	$.each(data, function (n, response) {
+                    $('.section').append(
+                        `<div class="col card">
+		    <img src="`+response['img']+`" alt="produk" style="width:100%">
+			<h1>Serbuk Kelor</h1>
+			<p class="price">Rp 30.000,00</p>
+			<p>Serbuk kelor adalah produk olahan yang mempunyai banyak manfaat untuk menjaga kesehatan tubuh.</p>
+  			<a href="userkeranjang.html"><button>Masukkan Keranjang</button></a>
+		  </div>`
+                    );
+                })
+		})
+            });
+</script>
 </body>
 </html>
