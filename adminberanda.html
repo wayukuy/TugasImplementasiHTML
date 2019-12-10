@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Perancangan Web | Kelompok 3</title>
+    <link rel="stylesheet" href="css/adminproduk.css">
+</head>
+<body>
+		<div class="topnav">
+		  <img class="bar" id="logoku" src="img/logoku.png">		  
+		  <a class="bar" href="adminlogin.html">Keluar</a>
+		  <a class="bar" href="adminpesanan.html">Pesanan</a>
+		  <a class="bar" href="adminproduk.html">Produk</a>	  
+		  <a class="bar" href="adminberanda.html" id="active">Beranda</a>
+		</div><br>
+		<div>
+		<h1 style="padding-left: 5%; color: black;" id="cardproduk">Beranda</h1>
+		</div>
+		<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+</body>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript">
+
+window.onload = function () {
+  var chart = new CanvasJS.Chart("chartContainer", {
+    title:{
+      text: "Produk Kelir Terlaris Minggu ini"              
+    },
+    data: [              
+    {
+      type: "column",
+      dataPoints: [
+        { label: "Suplemen Kelor",  y: 10  },
+        { label: "Kue Kelor", y: 15  },
+        { label: "Serbuk Kelor", y: 25  },
+        { label: "Mie Kelor",  y: 30  },
+        { label: "Teh Celup Kelor",  y: 28  }
+      ]
+    }
+    ]
+  });
+  chart.render();
+}
+</script>
+</html>
