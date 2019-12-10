@@ -69,13 +69,13 @@
             	$.each(data, function (n, response) {
                     $('.section').append(
                         `<div class="col card">
-		    <img src="`+response['img']+`" alt="produk" style="width:100%">
-			<h1>Serbuk Kelor</h1>
-			<p class="price">Rp 30.000,00</p>
-			<p>Serbuk kelor adalah produk olahan yang mempunyai banyak manfaat untuk menjaga kesehatan tubuh.</p>
-  			<a href="userkeranjang.html"><button>Masukkan Keranjang</button></a>
-		  </div>`
-                    );
+						    <img src="`+response['img']+`" alt="produk" style="width:100%">
+							<h1>`+response['judul']+`</h1>
+							<p class="price">`+response['harga']+`</p>
+							<p>`+response['deskripsi']+`</p>
+				  			<a href="userkeranjang.html"><button>Masukkan Keranjang</button></a>
+						  </div>`
+                   	 );
                 })
 		})
             });

@@ -1,27 +1,39 @@
 [
 {
-	"judul" : "serbuk",
+	"judul" : "Serbuk Kelor",
 	"img" : "img/produk2.jpg",
 	"harga" : "Rp. 30.000,00",
-	"deskripsi" : "slakdjlaksjdklasj"
+	"deskripsi" : "Serbuk kelor adalah produk olahan yang mempunyai banyak manfaat untuk menjaga kesehatan tubuh."
 },
 {
-	"judul" : "serbuk",
-	"img" : "img/produk2.jpg",
-	"harga" : "Rp. 30.000,00",
-	"deskripsi" : "slakdjlaksjdklasj"
+	"judul" : "Mie Kelor",
+	"img" : "img/mie.jpeg",
+	"harga" : "Rp. 15.000,00",
+	"deskripsi" : "Mie kelor sangat sehat dan dapat dikonsumsi untuk segala umur"
 },
 {
-	"judul" : "serbuk",
-	"img" : "img/produk2.jpg",
-	"harga" : "Rp. 30.000,00",
-	"deskripsi" : "slakdjlaksjdklasj"
+	"judul" : "Suplemen Kelor",
+	"img" : "img/pil.jpeg",
+	"harga" : "Rp. 25.000,00",
+	"deskripsi" : "Suplemen daun kelor untuk memberi asupan yang bermanfaat bagi tubuh"
 },
 {
-	"judul" : "serbuk",
+	"judul" : "Mie Kelor",
+	"img" : "img/mie.jpeg",
+	"harga" : "Rp. 15.000,00",
+	"deskripsi" : "Mie kelor sangat sehat dan dapat dikonsumsi untuk segala umur"
+},
+{
+	"judul" : "Serbuk Kelor",
 	"img" : "img/produk2.jpg",
 	"harga" : "Rp. 30.000,00",
-	"deskripsi" : "slakdjlaksjdklasj"
+	"deskripsi" : "Serbuk kelor adalah produk olahan yang mempunyai banyak manfaat untuk menjaga kesehatan tubuh."
+},
+{
+	"judul" : "Suplemen Kelor",
+	"img" : "img/pil.jpeg",
+	"harga" : "Rp. 25.000,00",
+	"deskripsi" : "Suplemen daun kelor untuk memberi asupan yang bermanfaat bagi tubuh"
 }
 
 ]
