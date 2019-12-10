@@ -32,14 +32,22 @@ body {
   height: 100vh;
 }
 
+#gambar {
+  width: 450px;
+  height: 400px;
+  background: grey;  
+  position: absolute;
+  top: 0%;
+}
+
 .produk-box {
   margin-bottom: 10px;
   width: 450px;
   height: 400px;
   background: grey;
   color: black;
-  top: 50%;
-  left: 50%;
+  top: 54%;
+  left: 30%;
   position: absolute;
   transform: translate(-50%, -50%);
   box-sizing: border-box;

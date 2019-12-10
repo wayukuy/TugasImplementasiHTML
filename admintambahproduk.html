@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/admineditproduk.css">
   </head>
   <body>
-
+    <p style="font-size: 2vw; margin-left: 59%; margin-top: 7%; font-weight: bold; color: white;">Preview Produk</p>
+    <img style="margin-left: 50%; margin-top: 10%;" id="gambar" />
     <div class="produk-box">
       <h1 style="text-align: center;">Tambah Produk</h1>
       <form name="formproduk" action="adminproduk.html" onsubmit="return formvalidasi()">
@@ -14,15 +15,15 @@
           <input type="text" name="nama" placeholder="Masukkan nama Produk" />
 
           <label>Deskripsi Produk</label>
-          <input type="text" name="nama" placeholder="Masukkan Deskripsi" />
+          <input type="text" name="deskripsi" placeholder="Masukkan Deskripsi" />
 
           <label>Harga Produk</label>
           <input type="text" name="harga" placeholder="Masukkan harga Produk" />
 
-          <label>Foto Produk</label>
-          <input type="file" name="foto" />
+          <label>Foto Produk</label>          
+          <input type="file" id="preview" name="foto" />        
           <input type="submit" value="Tambah">
-      </form>
+      </form>      
     </div>
   </body>
       <script type = "text/javascript">
@@ -32,6 +33,11 @@
          if( document.formproduk.nama.value == "" ) {
             alert( "Nama Produk Tidak Boleh Kosong!" );
             document.formproduk.nama.focus() ;
+            return false;
+         }
+         if( document.formproduk.deskripsi.value == "" ) {
+            alert( "Deskripsi Tidak Boleh Kosong!" );
+            document.formproduk.deskripsi.focus() ;
             return false;
          }
          if( document.formproduk.harga.value == "" ) {
@@ -46,5 +52,25 @@
          }
          return alert('Produk Berhasil ditambahkan!');
       }
-    </script>
+   </script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script type="text/javascript">
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          
+          reader.onload = function(e) {
+            $('#gambar').attr('src', e.target.result);
+          }
+          
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      $("#preview").change(function() {
+        readURL(this);
+      });
+      </script>
+ 
 </html>
