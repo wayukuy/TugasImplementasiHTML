@@ -8,7 +8,7 @@
 <body>
 		<div class="topnav">
 		  <img class="bar" id="logoku" src="img/logoku.png">
-		  <a class="bar" href="adminlogin.html">Keluar</a>
+		  <a class="bar" id="keluar">Keluar</a>
 		  <a class="bar" href="adminpesanan.html" id="active">Pesanan</a>
 		  <a class="bar" href="adminproduk.html">Produk</a>	  
 		  <a class="bar" href="adminberanda.html">Beranda</a>
@@ -43,6 +43,46 @@
 		</table>	
 		</div>
 		<br><br>
+	<div id="ModalKeluar" class="modalbox modalanimasi">
+
+        <div class="isimodal">
+            <p style="text-align: center; color: white;">Tekan Tombol Logout Untuk Keluar</p>
+            <button id="modalLogout">
+                Logout
+            </button>
+            <button id="modalKembali">
+                Kembali
+            </button>
+    </div>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$("#keluar").on('click', function () {
+        var modal = document.getElementById("ModalKeluar");
+        modal.style.display = "block";
+    })
+    $("#modalKembali").on('click', function () {
+        var modal = document.getElementById("ModalKeluar");
+        modal.style.display = "none";
+    })
+    $("#modalLogout").on('click', function () {
+        window.location.href = 'adminlogin.html';
+        return false;
+        modal.style.display = "none";
+    })
+    $(document).keyup(function (e) {
+        if (e.keyCode === 10) {
+            if (modal.style.display == "block") {
+                window.location.href = 'adminlogin.html';
+                return false;
+                modal.style.display = "none";
+            }
+        } 
+        if (e.keyCode === 30) {
+            var modal = document.getElementById("ModalKeluar");
+            modal.style.display = "none";
+        }
+    });
+  </script>
 </html>
